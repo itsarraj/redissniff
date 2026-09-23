@@ -1,0 +1,19 @@
+[package]
+name = "redissniff"
+version = "0.1.0"
+edition = "2021"
+description = "Connects to Redis and runs MONITOR, parsing and coloring the real-time command stream by key pattern or command type"
+license = "MIT"
+authors = ["Animesh Raj <animesh080808@gmail.com>"]
+repository = "https://github.com/itsarraj/redissniff"
+readme = "README.md"
+keywords = ["redis", "monitor", "sniff", "cli"]
+categories = ["command-line-utilities"]
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+clap = { version = "4", features = ["derive"] }
+anyhow = "1"
+regex = "1"
+colored = "2"
+url = "2"
